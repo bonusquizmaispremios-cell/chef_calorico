@@ -1283,7 +1283,7 @@ elif st.session_state.etapa == "App":
 
             cul_val  = st.session_state.dist_cul
             nref_val = st.session_state.dist_nref
-            kcal_val = int(st.session_state.dist_kcal)
+            kcal_val = int(st.session_state.get("dist_kcal") or 1500)
 
             nomes_ref = {
                 "2": ["Almoço","Jantar"],
